@@ -5,7 +5,7 @@ class Solution {
         int max=0;
         while(i<j){
             int min=Math.min(height[i],height[j]);
-            max=Math.max(max,min*(j-i));
+            max=Math.max(max,min*(j-i));//max water*distance
             if(height[i]<=height[j]){
                 i++;
             }
